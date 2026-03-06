@@ -1,0 +1,149 @@
+/* إعدادات عامة */
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  background-color: #f5efe6;
+  text-align: center;
+}
+
+/* رأس الصفحة */
+.hero {
+  padding: 60px 20px;
+  background-color: #006c35;
+  color: white;
+  position: relative;
+}
+
+/* اسم المدينة */
+.hero h1 {
+  font-size: 45px;
+}
+
+/* القائمة */
+.section-links {
+  margin-top: 20px;
+}
+
+.section-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.section-links a:hover {
+  background-color: white;
+  color: #006c35;
+}
+
+/* زر القائمة للجوال */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+/* الأقسام */
+.section {
+  background-color: white;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #8b5e3c;
+}
+
+/* الصور */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* التذييل */
+.footer {
+  background-color: #006c35;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* ---------- التصميم المتجاوب ---------- */
+
+/* الجوال */
+@media (max-width: 768px) {
+  
+  .hero h1 {
+    font-size: 30px;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .section-links {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .section-links.show {
+    display: flex;
+  }
+  
+  .section-links a {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .section {
+    margin: 15px;
+    padding: 20px;
+  }
+  
+}
+
+/* التابلت */
+@media (min-width:769px) and (max-width:1024px) {
+  
+  .hero h1 {
+    font-size: 38px;
+  }
+  
+  .image-gallery img {
+    width: 45%;
+  }
+  
+}
+
+/* الحاسب */
+@media (min-width:1025px) {
+  
+  .image-gallery img {
+    width: 300px;
+  }
+  
+}
