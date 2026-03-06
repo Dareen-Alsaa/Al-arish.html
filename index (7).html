@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- مهم جدًا للتصميم المتجاوب -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>محافظة أبو العريش</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- رأس الصفحة -->
+    <div class="hero" id="home">
+
+        <!-- زر القائمة للجوال -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <h1>محافظة أبو العريش</h1>
+        <p>"أبو العريش، لؤلؤة الجنوب بين الطبيعة والتاريخ." 🇸🇦</p>
+
+        <!-- القائمة -->
+        <div class="section-links" id="menu">
+            <a href="#about">نبذة عن المدينة</a>
+            <a href="#landmarks">المعالم</a>
+            <a href="#culture">التراث والثقافة</a>
+            <a href="#gallery">الصور</a>
+        </div>
+    </div>
+
+    <!-- نبذة -->
+    <div class="section" id="about">
+        <h2>نبذة عن محافظة أبو العريش</h2>
+        <p>
+            تقع محافظة أبو عريش في منطقة جازان وتتميز بتاريخها العريق وطبيعتها الزراعية الغنية،
+            حيث تشتهر بزراعة المانجو والمحاصيل المتنوعة.
+        </p>
+    </div>
+
+    <!-- المعالم -->
+    <div class="section" id="landmarks">
+        <h2>المعالم</h2>
+        <p>
+            تضم أبو عريش العديد من المعالم الطبيعية والتاريخية،
+            من الأسواق الشعبية والمزارع الواسعة إلى المواقع الأثرية التي تعكس حضارة المنطقة.
+        </p>
+    </div>
+
+    <!-- التراث -->
+    <div class="section" id="culture">
+        <h2>التراث والثقافة</h2>
+        <p>
+            تعكس المحافظة ثقافة غنية عبر الفنون الشعبية،
+            الملابس التقليدية، والمهرجانات المحلية،
+            مما يجسد الهوية الوطنية وأصالة المملكة.
+        </p>
+    </div>
+
+    <!-- الصور -->
+    <div class="section" id="gallery">
+        <h2>الصور</h2>
+        <div class="image-gallery">
+            <img src="images.jpeg">
+            <img src="image2.jpg">
+        </div>
+    </div>
+
+    <div class="footer">
+        🇸🇦 يوم التأسيس | "تاريخ يُلهمنا، ووطن نفخر به."
+    </div>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
